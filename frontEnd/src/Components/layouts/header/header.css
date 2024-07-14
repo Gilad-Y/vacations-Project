@@ -1,0 +1,10 @@
+.header {
+  height: 100%;
+  /* overflow: auto; */
+}
+.headerTitle {
+  font-family: "Borel", cursive;
+  margin-top: -0px;
+  text-align: center;
+  font-size: xx-large;
+}

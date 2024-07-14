@@ -1,0 +1,18 @@
+/* Assuming the 'home' class is defined in the vacationsPage.css */
+
+/* vacationsPage.css */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the desired height of the home div (adjust as needed) */
+}
+
+/* If you want to keep the image width fixed at 800px and maintain aspect ratio */
+.home img {
+  width: 800px;
+  margin-left: -200px;
+  margin-bottom: 200px;
+  height: auto; /* This will maintain the aspect ratio of the image */
+}

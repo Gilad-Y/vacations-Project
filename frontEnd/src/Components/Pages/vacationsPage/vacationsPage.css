@@ -1,0 +1,60 @@
+/* vacationsPage.css */
+
+/* Set the body and root containers to take up the full viewport height */
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Hide any potential scrollbars from body and root */
+}
+/* Add styles to the vacationsPage */
+.vacationsPage {
+  flex: 1; /* Grow to fill available space */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange children in a column */
+  overflow: hidden; /* Hide any potential scrollbars from this container */
+}
+/* Add styles to the toggleButtonGroupContainer */
+.toggleButtonGroupContainer {
+  flex-shrink: 0; /* Prevent toggleButtonGroupContainer from being squeezed */
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Add some spacing at the bottom */
+}
+
+/* Add styles to the addVacationButton */
+.addVacationButton {
+  max-width: 200px; /* Set a maximum width for the button */
+  margin: auto; /* Center the button horizontally */
+  display: block; /* Override default button display to block-level */
+}
+/* vacationsPage.css */
+
+/* Add styles for the vacation card container */
+.vacationCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Distribute space evenly between columns */
+  max-height: 800px; /* Set a maximum height for the container */
+  overflow-y: auto; /* Enable vertical scrolling if the content exceeds the container height */
+}
+
+/* Add styles for the vacation card */
+.vacationCard {
+  width: calc(
+    30% - 8px
+  ); /* Adjust the card width (subtract 8px for margin/gap) */
+  margin-bottom: 10px; /* Add some vertical space between rows */
+  margin-left: 60px; /* Adjust the margin between columns */
+}
+
+/* Add styles for the pagination container */
+.paginationContainer {
+  flex-shrink: 0; /* Prevent the pagination container from being squeezed */
+  margin-top: 20px; /* Add some space between the card container and pagination */
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center; /* Center the pagination horizontally */
+  align-items: center; /* Center the pagination vertically */
+}
